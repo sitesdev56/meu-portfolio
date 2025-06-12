@@ -1,0 +1,151 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cabecalho {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .conteudo-principal {
+    padding: 30px;
+  }
+  
+  .secao {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+  }
+  
+  .titulo-secao {
+    color: #00d4ff;
+    margin-bottom: 10px;
+  }
+  
+  .rodape {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* deixa redonda */
+    border: 3px solid #00d4ff;
+  }
+  
+  .cabecalho {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00d4ff;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .linguagens {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  .botoes-linguagens {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .botao-linguagem {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-linguagem:hover {
+    background-color: #555;
+  }
+  
+  .botao-linguagem.selecionado {
+    background-color: #00d4ff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .conteudos-linguagens .conteudo {
+    display: none;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  .conteudos-linguagens .conteudo.ativo {
+    display: block;
+  }
+
+  .icones-flutuantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+  }
+  
+  .icones-flutuantes .icone {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .icones-flutuantes .icone:hover {
+    transform: scale(1.1);
+  }
+  
+  .icones-flutuantes .icone img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0) brightness(0) contrast(1);
+  }
+  
+  .icones-flutuantes .icone img {
+    width: 24px;
+    height: 24px;
+  
+    /* Deixa o ícone com tom azul */
+    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1875%) hue-rotate(171deg) brightness(91%) contrast(94%);
+  }
+
+  .secao .projeto {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  
