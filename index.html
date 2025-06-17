@@ -3,91 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>meu portfolio</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Fofo💖</title>
+    <style>
+        body {
+            font-family: 'comic sans ms', cursive, sans-serif;
+            background: black;
+            background-size: cover;
+            color: white;
+            padding-top: 100px;
+            position: relative;
+        }
 
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px #000;
+        }
 
+        .btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 1000px;
+            cursor: pointer;
+            margin: 20px;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background-color: #ff69b4;
+            /* Verde */
+            color: white;
+
+        }
+
+        .no {
+            background-color: #ff4444;
+            /* Vermelho */
+            color: white;
+            position: absolute;
+        }
+
+       
+        
+
+    </style>
 </head>
 
 <body>
+    <h1>Você quer namorar cmg?💘</h1>
+    <a href="sim.html"> <button class="btn yes">SIM😍</button></a>
+    <button class="btn no" id="noBtn">NÃO😪</button>
+    <script>
+        // Função para mover o botão "NÃO" para uma posição aleatória
+        const nobtn = document.getElementById('noBtn');
+        noBtn.addEventListener('mouseover',()=> {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight- 50);
+            // Ajusta a posição do botão para que ele não saia da tela
+            nobtn.style.left = x + 'px';
+            nobtn.style.top = y + 'px';
+        });
+    </script>
 
-
-    <header class="cabecalho">
-        <h1>Diego Dev</h1>
-        <p class="subtitulo">desenvolvedor frontend</p>
-
-        <img class="foto-perfil" src="./src/imagem/potfolio.jpg" alt="foto de Diego">
-    </header>
-
-    <main class="conteudo-principal">
-        <div class="secao sobre-mim">
-            <h2 class="titulo-secao">sobre-mim</h2>
-            <p>Fala aí! Eu sou o Diego, um apaixonado por tecnologia que descobriu há uns 5 anos que sites e jogos são criados com programação — e desde então, nunca mais larguei essa ideia.
-
-                Sou daqueles que curte de tudo: desde games clássicos até os mais modernos, e se tem tecnologia no meio, eu tô mexendo!
-                
-                Meu sonho sempre foi trabalhar com internet e viver como programador profissional. Estou nessa jornada estudando por conta própria, fazendo cursos online e me dedicando pra virar um dev de verdade. Cada linha de código me aproxima mais do meu objetivo — e tô curtindo cada segundo dessa caminhada!</p>
-        </div>
-
-        <div class="linguagens">
-            <h2 class="titulo-secao">Minhas Linguagens</h2>
-
-            <div class="botoes-linguagens">
-                <button class="botao-linguagem selecionado" data-linguagem="html">HTML</button>
-                <button class="botao-linguagem" data-linguagem="css">CSS</button>
-                <button class="botao-linguagem" data-linguagem="js">JavaScript</button>
-            </div>
-
-            <div class="conteudos-linguagens">
-                <div class="conteudo ativo" id="html">
-                    <h3>HTML</h3>
-                    <p>Linguagem de marcação usada para estruturar o conteúdo da web.</p>
-                </div>
-
-                <div class="conteudo" id="css">
-                    <h3>CSS</h3>
-                    <p>Folhas de estilo que controlam o visual (cores, layout, fontes, etc).</p>
-                </div>
-
-                <div class="conteudo" id="js">
-                    <h3>JavaScript</h3>
-                    <p>Linguagem de programação que dá vida à página — interatividade, animações, etc.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="secao projeto">
-            <h2 class="titulo-secao">projetos</h2>
-            <a href="https://sitesdev56.github.io/barbearia_gabriel.com-/">BARBEARIA</a> 
-            <br> <br>
-            <a href="https://sitesdev56.github.io/atividade-dirigida-3-ano.com/">ATIVIDADE</a>
-            <br> <br>
-            <a href="https://sitesdev56.github.io/projeto-DBZ.Dls/">PROJETO-DBZ</a>
-        </div>
-    </main>
-
-
-
-    <footer class=" rodape">
-        <p>&copy; 2025 - Diego Dev</p>
-    </footer>
-
-    <div class="icones-flutuantes">
-        <a href="https://wa.me/5577999834426" target="_blank" class="icone whatsapp">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-        </a>
-        <a href="https://instagram.com/devdih_ofc" target="_blank" class="icone instagram">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="mailto:diegoxiaomi56@gmail.com" class="icone email">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="E-mail">
-        </a>
-      </div>      
-      
-
-    <script src="./src/script.js"></script>
 
 </body>
+
 </html>
