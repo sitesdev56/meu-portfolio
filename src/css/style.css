@@ -59,11 +59,7 @@ body {
     color: #070707ff;
 }
 
-.nav-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+
 
 /* Hero Section */
 .hero {
@@ -434,10 +430,6 @@ section {
     }
 
     .nav-menu.active {
-        display: none;
-    }
-
-    .nav-toggle {
         display: none;
     }
 
