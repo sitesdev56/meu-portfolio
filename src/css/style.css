@@ -441,6 +441,16 @@ section {
         display: none;
     }
 
+    /* Centraliza a marca quando o menu está oculto no mobile */
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-brand h2 {
+        margin: 0;
+        text-align: center;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
