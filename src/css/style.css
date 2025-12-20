@@ -438,6 +438,11 @@ section {
         justify-content: center;
     }
 
+    /* Esconde o nome "Portfólio" em dispositivos móveis */
+    .nav-brand {
+        display: none;
+    }
+
     .nav-brand h2 {
         margin: 0;
         text-align: center;
